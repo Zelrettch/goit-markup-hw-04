@@ -1,0 +1,275 @@
+.page {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #ffffff;
+    size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link {
+    text-decoration: none;    
+    color: currentColor;
+}
+
+.contacts {
+    font-style: normal;
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.page-header, .element-header, .section-header, .paragraph {
+    margin: 0;
+}
+
+.section-header {
+    margin-bottom: 72px;
+}
+
+.element-header {
+    margin-bottom: 8px;
+}
+
+.section {
+    padding: 120px 0;
+}
+
+.container {
+    max-width: 1158px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.button {
+    display: block;
+}
+
+.picture {
+    display: block;
+}
+
+/* FONTS*/
+
+/* Logo font */
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4D5AE5;
+}
+
+/* Header 1 font */
+.page-header {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+}
+
+/* Header 2 font */
+.section-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    color: #2E2F42;
+    text-transform: capitalize;
+}
+
+/* Header 3 font */
+.element-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2E2F42;
+}
+
+/* Button font */
+.button {
+    font-weight: 500;
+    size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+
+/* Header styles */
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header .logo {
+    margin-right: 76px;
+}
+
+.header .link,
+.header .logo {
+    display: block;
+    padding: 24px 0;
+}
+
+.header .logo .accent {
+    color: #2E2F42
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation,
+.header .list{
+    display: flex;
+    align-items: center;
+}
+
+.header .list {
+    gap: 40px ;
+}
+
+.header .list .link:hover,
+.header .list .link:focus {
+    color: #404BBF;
+}
+
+.navigation {
+    font-weight: 500;
+    color: #2E2F42;
+}
+
+/* Main block styles */
+
+.content {
+    flex-grow: 1;
+}
+
+/* Title section */
+
+.title.section {
+    background-color: #2E2F42;
+    color: #ffffff;
+    padding: 188px 0;
+}
+
+.page-header {
+    margin: 0 auto 48px auto;
+    max-width: 496px;
+}
+
+.title.section .button {
+    background-color: #4D5AE5;
+    color: currentColor;
+    cursor: pointer;
+    margin: auto;
+    min-width: 169px;
+    border: 0;
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+
+.title.section .button:hover,
+.title.section .button:focus {
+    background-color: #404BBF;
+}
+
+/* Advantages section */
+
+.advantages.section .list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.advantages.section .element {
+    flex-basis: 264px;
+}
+
+/* Team section */
+.team.section {
+    background-color: #F4F4FD;
+}
+
+.team.section .list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;  
+}
+
+.team.section .element {
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.team.section .text-block {
+    padding: 32px 0;
+}
+
+/* Portfolio section */
+
+.portfolio.section .list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio.section .element {
+    width: calc((100% - 48) / 3);
+}
+
+.portfolio.section .element .text-block {
+  border-right: 1px solid #E7E9FC;
+  border-bottom: 1px solid #E7E9FC;
+  border-left: 1px solid #E7E9FC;
+}
+
+.portfolio.section .text-block {
+    padding: 32px 16px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #2E2F42;
+    padding: 100px 0;
+}
+
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.footer .tagline,
+.footer .logo .accent {
+  color: #F4F4FD
+}
+
+.footer .tagline {
+    max-width: 264px;
+}
