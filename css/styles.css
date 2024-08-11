@@ -84,25 +84,23 @@
 
 .socials {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .socials .link {
-    display: block;
+    display: flex;
     background-color: #4D5AE5;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    position: relative;
     transition-property: background-color;
+    align-items: center;
+    justify-content: center;
 }
 
 .socials .icon {
     fill:#F4F4FD;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
 }
 
 /* FONTS*/
@@ -158,6 +156,9 @@
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .logo {
@@ -317,18 +318,17 @@
     margin-bottom: 8px;
 }
 
-
-
+.team.section .socials {
+    gap: 24px;
+}
 
 .team.section .socials .link:hover,
 .team.section .socials .link:focus {
     background-color: #404BBF;
 }
 
-
-
 .team.section .text-block {
-    padding: 32px 16px;
+    padding: 32px;
 }
 
 /* Portfolio section */
@@ -360,8 +360,8 @@
     position: relative;
     overflow: hidden;
 }
-.portfolio.section .element:hover .thumb .card-overlay,
-.portfolio.section .element:focus .thumb .card-overlay {
+.portfolio.section .element:hover .card-overlay,
+.portfolio.section .element:focus .card-overlay {
     transform: translateY(0%);
 }
 
@@ -407,15 +407,20 @@
 
 .footer .container {
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+}
+
+.footer .slogan-block {
+    margin-right: 120px;
 }
 
 .footer .socials-block .paragraph {
     color: #FFFFFF;
+    font-weight: 500;
     margin-bottom: 16px;
 }
 
-.footer .socials-block{
+.footer .list.socials {
     gap: 16px;
 }
 
