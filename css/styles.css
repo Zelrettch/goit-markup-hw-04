@@ -328,7 +328,7 @@
 }
 
 .team.section .text-block {
-    padding: 32px;
+    padding: 32px 0;
 }
 
 /* Portfolio section */
@@ -374,15 +374,17 @@
 }
 
 .portfolio.section .card-overlay {
+    position: absolute;
     display: block;
     width: 100%;
-    position: absolute;
     height: 100%;
+    top: 0;
+    left: 0;
     background-color: #4D5AE5;
     color: #F4F4FD;
     padding: 40px 32px;
-    transform: translateY(100%);
     transition-property: transform;
+    transform: translateY(100%);
 }
 
 /* Footer styles */
